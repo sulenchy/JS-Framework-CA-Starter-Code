@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from '../../public/assets/react.svg'
-import viteLogo from '/vite.svg'
-import '../styles/App.css'
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+    <div className="container mx-auto my-5">
+      <header className="bg-blue-600 text-white shadow-md">
+        <div className="container mx-auto flex justify-between items-center p-4">
+          <div className="text-lg font-bold">
+            <a href="#" className="hover:text-gray-200">
+              Starter Code
+            </a>
+          </div>
+
+          <nav className="space-x-4">
+            <a href="#" className="hover:text-gray-200">
+              Home
+            </a>
+            <a href="#" className="hover:text-gray-200">
+              About
+            </a>
+            <a href="#" className="hover:text-gray-200">
+              Contact
+            </a>
+          </nav>
+
+          <div>
+            <a
+              href="#"
+              className="bg-white text-blue-600 px-4 py-2 rounded hover:bg-gray-100"
+            >
+              Login
+            </a>
+          </div>
+        </div>
+      </header>
+    </div>
+  );
 }
 
 export default App
