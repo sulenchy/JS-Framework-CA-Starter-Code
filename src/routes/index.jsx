@@ -9,20 +9,20 @@ import {
       path: "/",
       element: <MainLayout />,
       children: [
-          {
-              path: '',
-              element: <App />,
-          },
-          {
-            path: 'login',
-            element: <Login />,
+        {
+            path: '',
+            element: <App />,
         },
         {
-          path: '/about',
+          path: 'login',
+          element: <Login />,
+        },
+        {
+          path: 'about',
           element: <About />
         },
         {
-          path: '/contact',
+          path: 'contact',
           element: <Contact />
         }
       ],
